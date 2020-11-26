@@ -1,0 +1,306 @@
+---
+title: "Dịch tễ học cơ bản"
+subtitle: "DỊCH TỄ HỌC PHÂN TÍCH"
+author: "Phùng Khánh Lâm, BS, TS"
+institute: "</br> Bộ môn Dịch tễ học, Khoa Y tế công cộng, Đại học Y Dược TP Hồ Chí Minh"
+date: "</br> `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: 
+    - xaringan-themer.css
+    - lampk.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+# uncomment this line to produce HTML and PDF in RStudio:
+#knit: pagedown::chrome_print
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+style_mono_light(
+  base_color = "#002147",
+  header_font_google = google_font('Yanone Kaffeesatz'),
+  text_font_google   = google_font("Yanone Kaffeesatz"),
+  code_font_google   = google_font("Inconsolata", "monospace"),
+  base_font_size = "20px",
+  text_font_size = "1.5rem"
+)
+```
+
+# Mục tiêu
+
+1.	Trình bày được mục đích của DTH phân tích
+2.	Trình bày được các thiết kế nghiên cứu chính trong DTH phân tích 
+3.	Trình bày được ưu nhược điểm của từng thiết kế nghiên cứu
+
+---
+class: inverse, center, middle
+
+# DỊCH TỄ HỌC PHÂN TÍCH
+
+---
+
+# Thiết kế nghiên cứu Dịch tễ học 
+
+--
+
+## Nghiên cứu quan sát
+
+## Nghiên cứu can thiệp
+
+---
+
+# Thiết kế nghiên cứu Dịch tễ học 
+
+## Nghiên cứu quan sát
+
+### Dịch tễ học mô tả
+
+### Dịch tễ học phân tích
+
+## Nghiên cứu can thiệp
+
+### Dịch tễ học can thiệp
+
+---
+
+# Thiết kế nghiên cứu Dịch tễ học 
+
+## Nghiên cứu quan sát
+
+### Dịch tễ học mô tả
+
+Mô tả bệnh trạng
+
+### Dịch tễ học phân tích
+
+Xác định mối quan hệ nhân quả giữa phơi nhiễm và bệnh
+
+## Nghiên cứu can thiệp
+
+### Dịch tễ học can thiệp
+
+---
+
+# Thảo luận theo phương pháp Jigsaw
+
+--
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "jigsaw_01.png"))
+```
+
+---
+
+# Thảo luận theo phương pháp Jigsaw
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "jigsaw_02.png"))
+```
+
+---
+
+# Thảo luận theo phương pháp Jigsaw
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "jigsaw_03.png"))
+```
+
+---
+
+# Thảo luận theo phương pháp Jigsaw
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "jigsaw_04.png"))
+```
+
+---
+
+# Dịch tễ học phân tích
+
+--
+
+* Luôn cần nhóm so sánh
+
+--
+
+* Sử dụng các số đo kết hợp
+
+--
+
+* Các thiết kế nghiên cứu chính
+
+    + Cắt ngang phân tích
+    + Bệnh - chứng
+    + Đoàn hệ: hồi cứu, tiến cứu
+
+---
+
+# Các thiết kế nghiên cứu chính
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DTHPT_01.png"))
+```
+
+---
+
+# Các thiết kế nghiên cứu chính
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DTHPT_02.png"))
+```
+
+---
+
+# Các thiết kế nghiên cứu chính
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DTHPT_03.png"))
+```
+
+---
+
+# Các thiết kế nghiên cứu chính
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DTHPT_04.png"))
+```
+
+---
+
+# Các thiết kế nghiên cứu chính
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DTHPT_05.png"))
+```
+
+---
+
+# Các thiết kế nghiên cứu chính
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DTHPT_06.png"))
+```
+
+---
+
+# Nghiên cứu cắt ngang phân tích
+
+```{r, echo=FALSE, out.width=350, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "NCCNPT.png"))
+```
+
+Ưu điểm
+* Dễ thực hiện: chi phí thấp, ít tốn thời gian
+
+Nhược điểm
+* Không kiểm soát được phơi nhiễm
+* Không xác định được trình tự nhân quả
+* Không đo lường trực tiếp nguy cơ
+* Sai lệch sống sót, không đáp ứng
+* Yếu tố gây nhiễu
+
+---
+
+# Nghiên cứu bệnh - chứng
+
+```{r, echo=FALSE, out.width=350, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "NCBC.png"))
+```
+
+Ưu điểm
+
+* Dễ thực hiện: chi phí thấp, ít tốn thời gian (phù hợp đối với bệnh hiếm)
+
+Nhược điểm
+
+* Không kiểm soát được phơi nhiễm
+* Đôi khi không xác định được trình tự nhân quả
+* Sai lệch nhớ lại
+* Khó chọn nhóm chứng phù hợp
+* Yếu tố gây nhiễu
+
+---
+
+# Nghiên cứu đoàn hệ hồi cứu
+
+```{r, echo=FALSE, out.width=350, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "NCDHHC.png"))
+```
+
+Ưu điểm
+
+* Đo lường trực tiếp nguy cơ
+* Dễ thực hiện: chi phí thấp, ít tốn thời gian
+
+Nhược điểm
+
+* Không kiểm soát được phơi nhiễm
+* Dữ liệu hồi cứu: thiếu thông tin, dữ liệu bị mất
+* Yếu tố gây nhiễu
+
+---
+
+# Nghiên cứu đoàn hệ tiến cứu
+
+```{r, echo=FALSE, out.width=350, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "NCDHTC.png"))
+```
+
+Ưu điểm
+
+* Đo lường trực tiếp nguy cơ
+* Kiểm soát được thông tin thu thập
+
+Nhược điểm
+
+* Khó thực hiện: chi phí cao, tốn thời gian
+* Không kiểm soát được phơi nhiễm
+* Mất dấu
+* Yếu tố gây nhiễu
+---
+
+# So sánh các thiết kế
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DTHPT_sosanh.png"))
+```
+
+---
+class: inverse, center, middle
+
+# Tóm tắt
+
+---
+
+# Tóm tắt
+
+* DTH phân tích: mối liên hệ nhân quả
+
+* Các thiết kế nghiên cứu chính
+    + Cắt ngang phân tích
+    + Bệnh - chứng
+    + Đoàn hệ hồi cứu
+    + Đoàn hệ tiến cứu
+    
+---
+class: center, middle
+
+# Cám ơn các anh chị đã theo dõi !
+
+Nhận xét về buổi học
+
+```{r, echo=FALSE, out.width=400, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DTHPT_eval.png"))
+```
+
+
+

@@ -1,0 +1,82 @@
+---
+title: "Nghiên cứu khoa học"
+subtitle: "BÁC SĨ VÀ NGHIÊN CỨU KHOA HỌC"
+author: "Phùng Khánh Lâm, BS, TS"
+institute: "</br> Bộ môn Dịch tễ học, Khoa Y tế công cộng, Đại học Y Dược TP Hồ Chí Minh"
+date: "</br> `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: 
+    - xaringan-themer.css
+    - lampk.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+      countdown: 60000
+      beforeInit: "addons/macro.js"
+# uncomment this line to produce HTML and PDF in RStudio:
+#knit: pagedown::chrome_print
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+style_mono_light(
+  base_color = "#002147",
+  header_font_google = google_font('Yanone Kaffeesatz'),
+  text_font_google   = google_font("Yanone Kaffeesatz"),
+  code_font_google   = google_font("Inconsolata", "monospace"),
+  base_font_size = "20px",
+  text_font_size = "1.5rem"
+)
+```
+
+background-image: url("figures/tomorrowdoctor_20032.png")
+background-position: center
+background-size: cover
+
+.footnote[
+UK General Medical Council (2003) Tomorrow’s doctors.
+]
+
+---
+
+# Người bác sĩ tương lai
+
+> Medical students are .ered[tomorrow’s doctors]. In
+accordance with Good medical practice, newly
+qualified doctors must make the care of patients their
+first concern, applying their knowledge and skills in a
+competent, ethical and professional manner and taking
+responsibility for their own actions in complex and
+uncertain situations.
+
+.footnote[
+UK General Medical Council (2018) Outcomes for graduates.
+]
+
+---
+background-image: url("figures/outcomesgraduates_2018.png")
+background-position: center top
+background-size: 100% 90%
+
+.footnote[
+UK General Medical Council (2018) Outcomes for graduates.
+]
+
+---
+
+![:img 50%, -100px, 30px, H1. Xin chào](figures/outcomesgraduates_2018.png)
+![:img 50%, 200px, 0px, H2. Xin chào](figures/tomorrowdoctor_20032.png)
+
+---
+
+![:imgabs 50%, 10%, 30%](figures/outcomesgraduates_2018.png)
+![:imgabs 50%, 50%, 50%](figures/tomorrowdoctor_20032.png)
+

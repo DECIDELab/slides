@@ -1,0 +1,455 @@
+---
+title: "Dịch tễ học cơ bản"
+subtitle: "NGHIÊN CỨU MÔ TẢ"
+author: "Phùng Khánh Lâm, BS, TS"
+institute: "</br> Bộ môn Dịch tễ học, Khoa Y tế công cộng, Đại học Y Dược TP Hồ Chí Minh"
+date: "</br> `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: 
+    - xaringan-themer.css
+    - lampk.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+# uncomment this line to produce HTML and PDF in RStudio:
+#knit: pagedown::chrome_print
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+style_mono_light(
+  base_color = "#002147",
+  header_font_google = google_font('Yanone Kaffeesatz'),
+  text_font_google   = google_font("Yanone Kaffeesatz"),
+  code_font_google   = google_font("Inconsolata", "monospace"),
+  base_font_size = "20px"
+)
+```
+
+# Bài giảng dựa trên
+
+* Sách Dịch tễ học cơ bản, Bộ môn Dịch tễ học (Chương 6: Dịch tễ học mô tả)
+
+* Bài giảng Dịch tễ học mô tả của TS BS Trịnh Thị Hoàng Oanh
+
+* Ann Aschengrau, George R. Seage III (2020) Essentials of epidemiology in public health. 4th Edition
+
+* Ví dụ từ các bài báo đăng trên các tạp chí khoa học
+
+---
+
+# Mục tiêu
+
+* Nêu được **3 đặc trưng** cần mô tả
+
+* Nêu được những **ứng dụng** của DTH mô tả
+
+* Liệt kê được các **thiết kế nghiên cứu chính** trong DTH mô tả và các **ưu điểm, nhược điểm** của từng thiết kế
+
+---
+class: inverse, center, middle
+
+# Các nội dung của DTH mô tả
+
+---
+
+# Dịch tễ học mô tả là gì ?
+
+Vận dụng phương pháp DTH để mô tả vấn đề sức khoẻ (WHAT), theo các đặc trưng:
+
+* Con người: Ai (WHO)
+* Nơi chốn: Ở đâu (WHERE)
+* Thời gian: Khi nào (WHEN)
+
+--
+
+Từ mức độ cá thể (báo cáo ca bệnh) đến mức độ dân số (điều tra cắt ngang)
+
+--
+
+Sử dụng các số đo bệnh trạng: số hiện mắc, số mới mắc
+
+---
+
+# Các số đo bệnh trạng
+
+Số ca hiện mắc (P) = Số ca mới mắc (I) x Thời gian bệnh (D)
+
+* Thời gian bệnh: phụ thuộc bản chất bệnh (cấp/mạn), chất lượng điều trị (khả năng tử vong, khỏi bệnh)
+* Bệnh cấp tính (COVID-19, Viêm ruột thừa): D thấp --> P thấp
+* Bệnh mạn tính (Tăng huyết áp): D cao --> P cao
+
+---
+
+# Đặc trưng về con người
+
+Bao gồm 
+
+* các đặc trưng không thay đổi (tuổi, giới, chủng tộc, …)
+* các đặc trưng thay đổi được (tình trạng kinh tế xã hội, nghề nghiệp, tôn giáo, …)
+
+--
+
+Tuổi: yếu tố quan trọng nhất
+
+* Nhiều bệnh có tỷ suất mắc bệnh thay đổi theo tuổi: tăng (bệnh mạn tính), giảm (bệnh cấp tính ở trẻ em: sởi, quai bị)
+* Lý do: thay đổi sinh lý, tích luỹ các phơi nhiễm [hút thuốc, uống rượu] cũng như các yếu tố bảo vệ [miễn dịch với các bệnh nhiễm trùng])
+
+--
+
+Giới tính
+
+* Nhiều bệnh có tỷ suất mắc bệnh thay đổi theo giới tính
+* Lý do: khác biệt về sinh học: nồng độ hormone, xã hội: thói quen, lối sống, tâm lý: khả năng chống lại stress
+
+---
+
+# Đặc trưng về con người
+
+Dân tộc và chủng tộc
+
+* Thường liên quan đến lối song, hành vi, tôn giáo, …
+* Thường liên quan đến trình độ văn hoá, kinh tế xã hội, tiếp cận dịch vụ y tế, nghề nghiệp
+
+--
+
+Các đặc trưng về gia đình và cá nhân 
+
+--
+
+Các yếu tố văn hoá – xã hội
+
+---
+
+# Ví dụ: Tuổi
+
+
+.footnote[
+
+GBD 2017 Mortality Collaborators. (2018). Global, regional, and national age-sex-specific mortality and life expectancy, 1950-2017: a systematic analysis for the Global Burden of Disease Study 2017. The Lancet, 392(10159), 1684–1735.
+
+]
+
+---
+
+# Ví dụ: Tuổi & giới tính
+
+.footnote[
+
+GBD. (2018). Global, regional, and national age-sex-specific mortality for 282 causes of death in 195 countries and territories, 1980-2017: a systematic analysis for the Global Burden of Disease Study 2017. The Lancet, 392(10159), 1736–1788.
+
+]
+
+---
+
+# Đặc trưng về nơi chốn
+
+Trả lời những câu hỏi như: vùng nào có tỉ suất mắc bệnh cao nhất, bệnh từ đâu đến và sẽ lan tràn nơi nào?
+
+Sự phân bố bệnh theo vị trí địa lý giúp so sánh tần suất bệnh ở các địa phương, từ đó giúp tìm hiểu nguyên nhân và các yếu tố liên quan, và đưa ra các biện pháp phòng ngừa.
+
+---
+
+# Đặc trưng về thời gian
+
+Đặc biệt quan trọng đối với những bệnh liên quan đến yếu tố môi trường hoặc nghề nghiệp.
+
+Gia tăng tần số mắc bệnh trong một thời khoảng
+
+* Thường là dấu hiệu ban đầu về sự xuất hiện một bệnh có chung nguồn lây trong cộng đồng (nhiễm trùng, côn trùng, ngộ độc thực phẩm, hoá chất)
+
+Khảo sát xu thế của bệnh trong thời gian dài
+
+* Giúp xây dung chiến lược chăm sóc sức khoẻ, đánh giá hiệu quả các chương trình y tế
+
+Tính chu kỳ
+
+* Theo mùa: thay đổi sinh lý cơ thể con người, thay đổi tính chất của nguyên nhân gây bệnh, điều kiện môi trường.
+* Giúp xác định nguyên nhân và lên kế hoạch can thiệp
+
+---
+
+# Ví dụ: Đường cong dịch (Epidemic curve)
+
+
+.footnote[
+
+Essentials of Epidemiology in Public Health, 2020
+
+]
+
+---
+
+# Ví dụ: Đường cong dịch (Epidemic curve)
+
+
+.footnote[
+
+Wu, Z., & McGoogan, J. M. (2020). Characteristics of and Important Lessons From the Coronavirus Disease 2019 (COVID-19) Outbreak in China: Summary of a Report of 72 314 Cases From the Chinese Center for Disease Control and Prevention. JAMA. 24 Feb 2020
+
+]
+
+---
+class: inverse, center, middle
+
+# Các ứng dụng của DTH mô tả
+
+---
+
+# Ứng dụng của dịch tễ học mô tả
+
+Mô tả tình trạng sức khoẻ, xu thế bệnh tật của cộng đồng (ví dụ sự xuất hiện dịch bệnh) 
+
+Hình thành giả thuyết về sự xuất hiện bệnh, các yếu tố nguy cơ
+
+Cung cấp dữ liệu cơ bản cho việc định kế hoạch chăm sóc sức khoẻ, đánh giá hiệu quả của các chương trình can thiệp lâm sàng và cộng đồng
+
+---
+
+# Hình thành giả thuyết về bệnh
+
+Giả thuyết thường là một mệnh đề cụ thể nhằm giải thích những hiện tượng quan sát được nhất định.
+
+Nhà dịch tễ học thường dựa vào các so sánh để hình thành giả thuyết:
+
+* So sánh các nhóm có tần suất mắc bệnh khác nhau để tìm ra các đặc điểm giải thích được.
+    + Ví dụ: sự khác biệt về tần suất tử vong ở trẻ sơ sinh theo chủng tộc tại Mĩ có thể giải thích do khác biệt về khả năng tiếp cận dịch vụ chăm sóc tiền sản.
+
+* Tìm các đặc điểm chung thường gặp ở những nhóm mắc bệnh.
+    + Ví dụ: có sự gia tăng tần suất ung thư lymphoma dạng non-Hodgkin ở nhiều nhóm nghề khác nhau (làm nông, làm cao su, làm hoá chất, giặt đồ) nhưng có điểm chung là sử dụng các chất dung môi.
+
+* Đánh giá thay đổi về tần suất mắc bệnh theo thời gian và/hoặc theo địa điểm để xác định các yếu tố xảy ra đồng thời có thể giải thích sự thay đổi đó.
+    + Ví dụ: sự gia tăng số ca tử vong do ung thư phổi ở nam giới từ 1930 đến 1990 có thể được giải thích do sự gia tăng hút thuốc lá diễn ra trong khoảng thời gian đó.
+
+* Tìm sự tương đồng giữa bệnh đang khảo sát và những bệnh đã biết khác
+    + Ví dụ: ở giai đoạn ban đầu của dịch HIV/AIDS, các nhà khoa học đã lưu ý đến một số đặc điểm giống viêm gan siêu vị B (thời điểm đó đã biết là do virus gây ra) như: có tiền căn bệnh lây qua đường tình dục, có nhiều bạn tình khác nhau, phơi nhiễm với kim tiêm. Từ những điểm giống nhau này mà từ giai đoạn sớm, các nhà khoa học đã đưa ra giả thuyết về khả năng HIV/AIDS cũng gây ra do virus.  
+
+---
+
+# Cung cấp dữ liệu cho việc lập kế hoạch và đánh giá can thiệp
+
+Các nhà hoạch định chính sách về y tế công cộng sử dụng DTH mô tả để:
+
+* Xác định thứ tự ưu tiên
+* Chuẩn bị nguồn lực
+* Lập kế hoạch và đánh giá hiệu quả của các chương trình can thiệp
+
+---
+class: inverse, center, middle
+
+# Các thiết kế nghiên cứu chính trong DTH mô tả
+
+---
+
+# Thực hiện dịch tễ học mô tả như thế nào?
+
+Nguồn dữ liệu cho DTH mô tả
+
+* Dữ liệu sẵn có lưu trữ từng năm (hồi cứu hồ sơ)
+* Quan sát trên lâm sàng/cộng đồng
+* Điều tra dân số (census)
+* Điều tra cắt ngang (cross-sectional survey)
+
+--
+
+Các thiết kế nghiên cứu trong DTH mô tả
+
+* Nghiên cứu tương quan (ecological study)
+* Báo cáo từng ca/hàng loạt ca (case report, case series)
+* Nghiên cứu cắt ngang (cross-sectional study)
+* Nghiên cứu khảo sát số mới mắc (incidence study)
+
+---
+
+# Nghiên cứu tương quan (Ecological study)
+
+Nghiên cứu thực hiện tại cấp độ dân số/nhóm chứ không phải ở cấp độ cá nhân.
+
+Được sử dụng khi
+
+* Muốn theo dõi tình trạng sức khoẻ trong cộng đồng
+* Muốn thực hiện các so sánh ở quy mô lớn (giữa các quốc gia)
+* Tìm hiểu mối liên hệ giữa yếu tố phơi nhiễm ở cấp độ dân số với bệnh
+* Không có dữ liệu ở cấp độ cá nhân
+* Bệnh hiếm nên phải tổng hợp dữ liệu
+
+Điểm mạnh
+
+* Nhanh, ít tốn kém, dựa vào dữ liệu sẵn có
+
+Điểm yếu
+
+* Khó loại trừ ảnh hưởng bởi các yếu tố gây nhiễu
+* Nguỵ biện sinh thái (ecological fallacy): mối liên quan ở cấp độ dân số có thể không phản ánh mối liên quan ở cấp độ cá nhân
+
+---
+
+# Ví dụ nghiên cứu tương quan
+
+.footnote[
+
+Wang, J. et al. (2020). High Temperature and High Humidity Reduce the Transmission of COVID-19. SSRN Electronic Journal.
+
+]
+
+---
+
+# Ví dụ nghiên cứu tương quan
+
+.footnote[
+
+https://www.cebm.net/covid-19/do-weather-conditions-influence-the-transmission-of-the-coronavirus-sars-cov-2/
+
+]
+
+---
+
+# Báo cáo từng ca – hàng loạt ca
+
+Mô tả tình trạng bệnh và đặc trưng của từng ca bệnh/nhóm ca bệnh. Rất thường gặp trong y khoa
+
+Điểm mạnh
+
+* Là những mô tả đầu tiên về bệnh mới hoặc bệnh hiếm
+* Bước đầu hình thành giả thuyết về bệnh
+
+Điểm yếu
+
+* Không thể kiểm chứng giả thuyết (không có nhóm chứng, số lượng ít)
+* Ít có giá trị về định lượng, không đo lường được mức độ phổ biến
+* Không đại diện:
+    + Kết quả có thể thay đổi theo thời gian (dịch bệnh)
+    + Phụ thuộc cách phát hiện các ca bệnh 
+
+---
+
+# Ví dụ báo cáo ca bệnh
+
+
+.footnote[
+
+Le, H. T. et al. (2020). The first infant case of COVID-19 acquired from a secondary transmission in Vietnam. Lancet Child & Adolescent Health.
+
+]
+
+---
+
+# Ví dụ báo cáo hàng loạt ca
+
+
+.footnote[
+
+Young, B. E.  et al. (2020). Epidemiologic Features and Clinical Course of Patients Infected With SARS-CoV-2 in Singapore. JAMA.
+
+]
+
+---
+
+# Nghiên cứu cắt ngang (cross-sectional studies)
+
+Nghiên cứu mà phơi nhiễm và bệnh được quan sát và đo lường tại cùng một thời điểm
+
+Có thể phục vụ mục đích mô tả và cả mục đích phân tích
+
+Điểm mạnh
+
+* Nhanh chóng, dễ thực hiện, ít tốn kém
+
+Điểm yếu
+
+* Không xác định được trình tự thời gian giữa nguyên nhân và hậu quả
+* Chỉ đo được số hiện mắc, không đo lường được số mới mắc
+* Chỉ khảo sát một thời điểm nên không thể mô tả toàn vẹn những đặc tính thay đổi theo thời gian
+* Sai lệch chọn lựa (selection bias)
+    + Ví dụ khi đối tượng từ chối tham gia do những yếu tố liên quan đến bệnh và phơi nhiễm
+    + Ví dụ khi những ca bệnh nặng/tử vong không thể tham gia nghiên cứu 
+    
+---
+
+# Ví dụ nghiên cứu cắt ngang
+
+
+.footnote[
+
+Lai, J. et al. (2020). Factors associated with mental health outcomes among health care workers exposed to coronavirus disease 2019. JAMA network open, 3(3), e203976.
+
+]
+
+---
+
+# Nghiên cứu khảo sát số mới mắc (Incidence studies)
+
+Bao gồm những nghiên cứu nhằm khảo sát số mới mắc
+
+Bao gồm nghiên cứu đoàn hệ (cohort study) và các nghiên cứu dựa trên dữ liệu từ các điều tra trong dân số
+
+Điểm mạnh
+
+* Đo được số mới mắc
+
+Điểm yếu
+
+* Thường tốn kém, lâu năm
+* Gặp vấn đề người tham gia nghiên cứu bỏ cuộc
+
+---
+
+# Ví dụ nghiên cứu khảo sát số mới mắc
+
+.footnote[
+
+Kinross, P., et al. (2020). Rapidly increasing cumulative incidence of coronavirus disease (COVID-19) in the European Union/European Economic Area and the United Kingdom, 1 January to 15 March 2020. Euro Surveillance.
+
+]
+
+---
+class: inverse, center, middle
+
+# Kết luận
+
+---
+
+# Kết luận
+
+
+--
+
+Dịch tễ học mô tả cho biết những thông tin về con người, thời gian, nơi chốn cùng với các đặc trưng cụ thể khác.
+
+--
+
+Dịch tễ học mô tả giúp
+
+* Xác định vấn đề sức khoẻ và các đặc điểm của vấn đề
+* Xây dựng giả thuyết về bệnh
+* Xây dựng kế hoạch chăm sóc sức khoẻ, đánh giá hiệu quả của các chương trình can thiệp lâm sàng và cộng đồng
+
+--
+
+Thực hiện DTH mô tả với nhiều nguồn dữ liệu khác nhau, qua các nghiên cứu dịch tễ học. Mỗi loại nghiên cứu có mục đích, ưu điểm và khuyết điểm riêng
+
+---
+
+# Test
+
+```{r}
+knitr::include_url("https://jamboard.google.com/d/1eBbdYU6n11qczGOfr4EStNRs9Ck38CXC8gJQc7aVi04/viewer")
+```
+
+
+---
+class: center, middle
+
+# Cám ơn các anh chị đã theo dõi !
+
+Bài giảng này được lưu tại địa chỉ [**https://github.com/lampk**](https://github.com/lampk).
+
+

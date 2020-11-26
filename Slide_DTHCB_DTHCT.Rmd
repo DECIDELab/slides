@@ -1,0 +1,447 @@
+---
+title: "Dịch tễ học cơ bản"
+subtitle: "DỊCH TỄ HỌC CAN THIỆP"
+author: "Phùng Khánh Lâm, BS, TS"
+institute: "</br> Bộ môn Dịch tễ học, Khoa Y tế công cộng, Đại học Y Dược TP Hồ Chí Minh"
+date: "</br> `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: 
+    - xaringan-themer.css
+    - lampk.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+# uncomment this line to produce HTML and PDF in RStudio:
+#knit: pagedown::chrome_print
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+style_mono_light(
+  base_color = "#002147",
+  header_font_google = google_font('Yanone Kaffeesatz'),
+  text_font_google   = google_font("Yanone Kaffeesatz"),
+  code_font_google   = google_font("Inconsolata", "monospace"),
+  base_font_size = "20px",
+  text_font_size = "1.5rem"
+)
+```
+
+# Mục tiêu
+
+1.	Trình bày được ưu/nhược điểm của nghiên cứu can thiệp so với nghiên cứu quan sát
+2.	Trình bày được những biện pháp làm tăng giá trị của nghiên cứu can thiệp 
+3.	Phân biệt các loại nghiên cứu can thiệp
+4.  Nguyên tắc về y đức khi thực hiện nghiên cứu lâm sàng
+
+---
+class: inverse, center, middle
+
+# NGHIÊN CỨU CAN THIỆP vs. NGHIÊN CỨU QUAN SÁT
+
+---
+
+# Điều kiện cho suy diễn nhân quả
+
+--
+
+## Thời gian (Temporality) 
+
+* Hậu quả phải xảy ra sau nguyên nhân
+
+--
+
+## Hoán đổi (Exchangeability) 
+
+* Nguy cơ xảy ra kết cuộc (ngoài nguyên nhân do phơi nhiễm) phải như nhau giữa 2 nhóm so sánh
+
+--
+
+## Nhất quán (Consistency)  
+
+--
+
+## Sai số đo lường (Measurement error)
+
+
+---
+
+# Để xác định mối liên hệ nhân quả 
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DTHPT_06.png"))
+```
+
+---
+
+# Nhược điểm của nghiên cứu quan sát
+
+--
+
+## Không kiểm soát được phơi nhiễm
+
+--
+
+Nhất quán (Consistency)
+
+--
+
+## Yếu tố gây nhiễu
+
+--
+
+Hoán đổi (Exchangeability)
+
+--
+
+Unmeasured confounder
+
+---
+
+# Yếu tố gây nhiễu
+
+--
+
+HCQ, QT kéo dài, sốt rét
+
+---
+
+class: inverse, center, middle
+
+# THIẾT KẾ NGHIÊN CỨU CAN THIỆP 
+
+---
+
+# HCQ và QT kéo dài
+
+```{r, echo=FALSE, out.width=500, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "hcqQT_01.png"))
+```
+
+---
+
+# HCQ và QT kéo dài
+
+```{r, echo=FALSE, out.width=500, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "hcqQT_02.png"))
+```
+
+---
+
+# Thảo luận theo phương pháp Jigsaw
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "jigsaw_04.png"))
+```
+
+---
+
+# Thiết kế nghiên cứu can thiệp
+
+# Các biện pháp làm tăng giá trị của nghiên cứu can thiệp
+
+---
+
+# Nhóm chứng (Control)
+
+--
+
+Hạn chế ảnh hưởng của sai lệch hệ thống
+
+* Hiệu ứng Placebo
+* Secular trend
+* Regression to the mean
+
+---
+
+# Phân nhóm ngẫu nhiên (Randomization)
+
+--
+
+Cần tạo ra các nhóm tương đồng
+
+---
+
+# Các cách phân nhóm điều trị
+
+--
+
+* Theo quyết định của người điều trị
+
+--
+
+* Phân nhóm hệ thống (tuần tự)
+
+--
+
+* Bắt cặp
+
+--
+
+* Phân nhóm ngẫu nhiên
+
+---
+
+# Các cách phân nhóm điều trị
+
+* Theo quyết định của người điều trị --> selection bias
+
+* Phân nhóm hệ thống (tuần tự)
+
+* Bắt cặp
+
+* Phân nhóm ngẫu nhiên
+
+---
+
+# Các cách phân nhóm điều trị
+
+* Theo quyết định của người điều trị --> selection bias
+
+* Phân nhóm hệ thống (tuần tự) --> selection bias
+
+* Bắt cặp 
+
+* Phân nhóm ngẫu nhiên
+
+---
+
+# Các cách phân nhóm điều trị
+
+* Theo quyết định của người điều trị --> selection bias
+
+* Phân nhóm hệ thống (tuần tự) --> selection bias
+
+* Bắt cặp --> unmeasured confounder
+
+* Phân nhóm ngẫu nhiên
+
+---
+
+# Phân nhóm ngẫu nhiên
+
+* Hạn chế sai lệch chọn lựa
+
+* Hạn chế các yếu tố gây nhiễu (đã biết và chưa biết)
+
+* Tạo ra các nhóm so sánh được với nhau (tại thời điểm bắt đầu nghiên cứu)
+
+---
+
+# Làm mù (Blinding)
+
+--
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "blinding.png"))
+```
+
+--
+
+Sai lệch thông tin
+
+---
+
+# Các biện pháp làm tăng giá trị của nghiên cứu can thiệp
+
+--
+
+* Nhóm chứng (Control)
+* Phân nhóm ngẫu nhiên (Randomization)
+* Làm mù (Blinding)
+
+--
+
+RCT (Randomized Controlled Trials/Randomized, Double-blind, Controlled Trials)
+
+---
+
+# Tháp chứng cứ
+
+```{r, echo=FALSE, out.width=500, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "evidencePyramid.png"))
+```
+
+--
+
+Nhược điểm của nghiên cứu can thiệp so với nghiên cứu quan sát?
+
+---
+class: inverse, center, middle
+
+# CÁC LOẠI NGHIÊN CỨU CAN THIỆP 
+
+---
+
+# Các loại nghiên cứu can thiệp
+
+* Thử nghiệm lâm sàng
+
+* Thử nghiệm thực địa
+
+* Thử nghiệm can thiệp cộng đồng
+
+---
+
+# Các loại nghiên cứu can thiệp
+
+* Thử nghiệm lâm sàng: biện pháp điều trị trên bệnh nhân
+
+--
+
+* Thử nghiệm thực địa: biện pháp dự phòng trên dân số nguy cơ (người khoẻ)
+
+--
+
+* Thử nghiệm can thiệp cộng đồng: biện pháp dự phòng trên dân số nguy cơ (người khoẻ), thực hiện trên quy mô cộng đồng
+
+---
+
+# Các loại nghiên cứu can thiệp
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "trial_01.png"))
+```
+
+---
+
+# Các loại nghiên cứu can thiệp
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "trial_02.png"))
+```
+
+---
+
+# Các loại nghiên cứu can thiệp
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "trial_03.png"))
+```
+
+---
+
+# Các giai đoạn của thử nghiệm lâm sàng
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "phaseRCT.png"))
+```
+
+---
+
+# Các giai đoạn của thử nghiệm lâm sàng
+
+* Tiền lâm sàng
+* Phase 0: sinh khả dụng, thời gian bán huỷ
+* Phase 1: liều, độ an toàn
+* Phase 2: hiệu lực (cận lâm sàng), độ an toàn
+* Phase 3: hiệu lực, hiệu quả, độ an toàn
+* Phase 4: tác dụng phụ lâu dài
+
+---
+class: inverse, center, middle
+
+# Y ĐỨC TRONG NGHIÊN CỨU LÂM SÀNG
+
+---
+
+# Vì sao?
+
+Nghiên cứu khác với điều trị
+
+Mục đích của nghiên cứu
+
+--
+
+* Kiến thức mới
+
+--
+
+Lợi ích của người tham gia nghiên cứu
+
+--
+
+* Thường không có lợi ích trực tiếp
+
+---
+
+# Văn bản
+
+* Nuremberg Code (1947)
+
+* Declaration of Helsinki (2000)
+
+* Belmont Report (1979)
+
+* CIOMS (2002)
+
+---
+
+# Nguyên tắc
+
+--
+
+* Công bằng (justice)
+
+--
+
+* Cân nhắc lợi ích/rủi ro (beneficence)
+
+--
+
+* Tôn trọng ý kiến cá nhân (respect of autonomy)
+
+--
+
+*	Không ác ý (non-maleficence)
+
+--
+
+**Khi áp dụng cần cân nhắc cả các yếu tố về văn hoá, xã hội**
+
+---
+
+# Áp dụng
+
+--
+
+* Khi nào tiến hành thử nghiệm lâm sàng?
+
+--
+
+* Thực hiện thử nghiệm lâm sàng như thế nào?
+
+--
+
+* Khi nào kết thúc thử nghiệm lâm sàng?
+
+---
+class: inverse, center, middle
+
+# Tóm tắt
+
+---
+
+# Tóm tắt
+
+* Điều kiện của suy diễn nhân quả
+* Ưu/nhược điểm của nghiên cứu can thiệp so với nghiên cứu quan sát
+* Biện pháp làm tăng giá trị của nghiên cứu can thiệp
+* Phân biệt các loại nghiên cứu can thiệp
+* Nguyên tắc về y đức khi thực hiện nghiên cứu lâm sàng
+
+---
+class: center, middle
+
+# Cám ơn các anh chị đã theo dõi !
+
+
+

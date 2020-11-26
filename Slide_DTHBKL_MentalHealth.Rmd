@@ -1,0 +1,105 @@
+---
+title: "Dịch tễ học Bệnh không lây"
+subtitle: "SỨC KHOẺ TINH THẦN"
+author: "Phùng Khánh Lâm, BS, TS"
+institute: "</br> Bộ môn Dịch tễ học, Khoa Y tế công cộng, Đại học Y Dược TP Hồ Chí Minh"
+date: "</br> `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: 
+    - xaringan-themer.css
+    - lampk.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+# uncomment this line to produce HTML and PDF in RStudio:
+#knit: pagedown::chrome_print
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+style_mono_light(
+  base_color = "#002147",
+  header_font_google = google_font('Yanone Kaffeesatz'),
+  text_font_google   = google_font("Yanone Kaffeesatz"),
+  code_font_google   = google_font("Inconsolata", "monospace"),
+  base_font_size = "20px",
+  text_font_size = "1.5rem"
+)
+```
+
+---
+
+class: inverse, center, middle
+
+# NO HEALTH WITHOUT MENTAL HEALTH
+
+---
+
+# Meh
+
+<video width="640" height="480" autoplay>
+<source src="https://www.dropbox.com/s/fdvexas49e06y6d/Meh.mp4?dl=0" type="video/mp4">
+</video>
+
+---
+
+# Trầm cảm là gì?
+
+```{r, echo = FALSE}
+knitr::include_url("https://youtube.com/embed/z-IR48Mb3W0")
+```
+
+.footnote[
+https://youtu.be/z-IR48Mb3W0
+]
+---
+
+# "Overdue" by Wali Shah
+
+```{r, echo = FALSE}
+knitr::include_url("https://youtube.com/embed/y4qgMzsGyfg")
+```
+
+.footnote[
+https://globalmentalhealthcommission.org/animations/
+]
+
+---
+class: inverse, center, middle
+
+# DISCRIMINATION
+
+# STIGMA
+
+---
+
+# Đối tượng nguy cơ
+
+* Trẻ mồ côi
+* Trẻ vị thành niên
+* Phụ nữ sau sinh
+* Người mắc bệnh mạn tính (đặc biệt HIV/AIDS)
+* Người già
+* Thảm hoạ, chiến tranh
+
+---
+
+class: inverse, center, middle
+
+# ĐO LƯỜNG
+
+---
+
+class: inverse, center, middle
+
+# CAN THIỆP
+
+

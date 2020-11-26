@@ -1,0 +1,715 @@
+---
+title: "Dịch tễ học cơ bản"
+subtitle: "BỆNH VÀ SỰ XUẤT HIỆN DỊCH"
+author: "Phùng Khánh Lâm, BS, TS"
+institute: "</br> Bộ môn Dịch tễ học, Khoa Y tế công cộng, Đại học Y Dược TP Hồ Chí Minh"
+date: "</br> `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: 
+    - xaringan-themer.css
+    - lampk.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+# uncomment this line to produce HTML and PDF in RStudio:
+#knit: pagedown::chrome_print
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+style_mono_light(
+  base_color = "#002147",
+  header_font_google = google_font('Yanone Kaffeesatz'),
+  text_font_google   = google_font("Yanone Kaffeesatz"),
+  code_font_google   = google_font("Inconsolata", "monospace"),
+  base_font_size = "20px",
+  text_font_size = "1.5rem"
+)
+```
+
+# Mục tiêu
+
+1.	Liệt kê được các giai đoạn trong quá trình phát triển của một bệnh.
+2.	Liệt kê được ba thành phần của dây chuyền lây.
+3.	Mô tả được những ứng dụng của lịch sử tự nhiên và dây chuyền lây trong lĩnh vực phòng ngừa.
+4.	Liệt kê được các hình thức của một vụ dịch
+
+---
+class: inverse, center, middle
+
+# BỆNH
+
+---
+
+# Bệnh xuất hiện như thế nào ?
+
+[Jamboard link](https://jamboard.google.com/d/1eBbdYU6n11qczGOfr4EStNRs9Ck38CXC8gJQc7aVi04/edit?usp=sharing)
+
+---
+
+# Tam giác dịch tễ học
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "epitriad.png"))
+```
+
+--
+
+Túc chủ (host): người có khả năng mắc bệnh
+
+“Có khả năng mắc bệnh” (susceptible): cảm nhiễm
+
+.footnote[
+
+CDC (2012) Principles of Epidemiology in Public Health Practice, 3rd
+
+]
+
+---
+
+# Bánh nguyên nhân
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "causalpie.png"))
+```
+
+.footnote[
+
+CDC (2012) Principles of Epidemiology in Public Health Practice, 3rd
+
+]
+
+---
+
+# Bệnh lây từ động vật
+
+--
+
+* 6/10 bệnh truyền nhiễm trên người có nguồn gốc từ động vật
+
+* 3/4 bệnh nhiễm trùng mới hoặc mới trỗi dậy có nguồn gốc từ động vật
+
+* Bệnh có nguồn gốc từ động vật gây ra ~2.5 tỉ ca bệnh và ~2.7 triệu ca tử vong mỗi năm trên toàn thế giới
+
+.footnote[
+https://www.cdc.gov/globalhealth/healthprotection/fieldupdates/winter-2017/prevent-zoonotic-diseases.html
+]
+
+---
+
+# Bệnh lây từ động vật
+
+```{r, echo=FALSE, out.width=550, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "spillover.png"))
+```
+
+.footnote[
+Wolfe, N. D., Dunavan, C. P., & Diamond, J. (2007). Nature, 447(7142), 279–283. https://doi.org/10.1038/nature05775
+]
+
+---
+
+# Định nghĩa ca bệnh
+
+--
+
+Là cơ sở để xác định, tính toán, so sánh số lượng ca bệnh
+
+Bao gồm tiêu chuẩn lâm sàng, cận lâm sàng, dịch tễ học
+
+Có thể thay đổi theo thời gian, tuỳ mục đích, điều kiện cụ thể
+
+---
+
+# Định nghĩa ca bệnh: COVID-19 (06/02/2020)
+
+```{r, echo=FALSE, out.width=600, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "casedef1.png"))
+```
+
+.footnote[
+
+322/QĐ-BYT
+
+]
+
+---
+
+# Định nghĩa ca bệnh: COVID-19 (25/03/2020)
+
+```{r, echo=FALSE, out.width=600, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "casedef2.png"))
+```
+
+.footnote[
+
+1344/QĐ-BYT
+
+]
+
+---
+
+# Lịch sử tự nhiên của bệnh
+
+--
+
+```{r, echo=FALSE, out.width=600, fig.align="left"}
+knitr::include_graphics(path = file.path("figures", "LSTN.png"))
+```
+
+
+---
+
+# Hiện tượng tảng băng
+
+--
+
+```{r, echo=FALSE, out.width=1000, fig.align="left"}
+knitr::include_graphics(path = file.path("figures", "HTTangBang.png"))
+```
+
+---
+
+# Hiện tượng tảng băng
+
+```{r, echo=FALSE, out.width=350, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "HTTangBang2.jpeg"))
+```
+
+.footnote[
+
+https://www.mohr-mohr-and-more.org/coaching/sortir-de-l-histoire
+
+]
+
+---
+
+# Các bậc dự phòng
+
+--
+
+```{r, echo=FALSE, out.width=1000, fig.align="left"}
+knitr::include_graphics(path = file.path("figures", "BacDuPhong.png"))
+```
+
+---
+
+# Vaccine
+
+Dự phòng bậc mấy???
+
+---
+
+# Vaccine (dự phòng bậc 1)
+
+```{r, echo=FALSE, out.width=1000, fig.align="left"}
+knitr::include_graphics(path = file.path("figures", "covid19vaccine.png"))
+```
+
+---
+
+# Vaccine (dự phòng bậc 1)
+
+```{r, echo=FALSE, out.width=1000, fig.align="left"}
+knitr::include_graphics(path = file.path("figures", "covid19vaccine2.png"))
+```
+
+.footnote[
+https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontech-announce-vaccine-candidate-against
+]
+
+---
+
+# Vaccine (dự phòng bậc 0?)
+
+Đậu mùa
+
+```{r, echo = FALSE}
+knitr::include_url("https://ourworldindata.org/grapher/decade-in-which-smallpox-ceased-to-be-endemic-by-country")
+```
+
+.footnote[
+https://ourworldindata.org/eradication-of-diseases
+]
+
+---
+
+# Vaccine (dự phòng bậc 0?)
+
+Bại liệt
+
+```{r, echo = FALSE}
+knitr::include_url("https://ourworldindata.org/grapher/number-of-estimated-paralytic-polio-cases-by-world-region")
+```
+
+.footnote[
+https://ourworldindata.org/eradication-of-diseases
+]
+
+---
+class: inverse, center, middle
+
+# DỊCH
+
+---
+
+# Bệnh lây truyền như thế nào?
+
+---
+
+# COVID-19
+
+[Jamboard link](https://jamboard.google.com/d/1eBbdYU6n11qczGOfr4EStNRs9Ck38CXC8gJQc7aVi04/edit?usp=sharing)
+
+---
+
+# COVID-19
+
+```{r, echo=FALSE, out.width=400, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DCL_COVID19.png"))
+```
+
+.footnote[
+
+https://www.safetyandquality.gov.au/sites/default/files/2020-05/break_the_chain_poster_a3.pdf
+
+]
+
+---
+
+# Béo phì
+
+[Jamboard link](https://jamboard.google.com/d/1eBbdYU6n11qczGOfr4EStNRs9Ck38CXC8gJQc7aVi04/edit?usp=sharing)
+
+
+---
+
+# Béo phì
+
+```{r, echo = FALSE}
+knitr::include_url("https://youtube.com/embed/pJfq-o5nZQ4")
+```
+
+.footnote[
+
+Christakis, N. A., & Fowler, J. H. (2007). The Spread of Obesity in a Large Social Network over 32 Years. New England Journal of Medicine, 357(4), 370–379. https://doi.org/10.1056/NEJMsa066082.
+
+]
+
+---
+
+# Dây chuyền lây
+
+--
+
+```{r, echo=FALSE, out.width=750, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DCL.png"))
+```
+
+.footnote[
+
+CDC (2012) Principles of Epidemiology in Public Health Practice, 3rd
+
+]
+
+---
+
+# Dây chuyền lây
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DCL1.png"))
+```
+
+.footnote[
+
+CDC (2012) Principles of Epidemiology in Public Health Practice, 3rd
+
+]
+
+---
+
+# Dây chuyền lây
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DCL2.png"))
+```
+
+.footnote[
+
+CDC (2012) Principles of Epidemiology in Public Health Practice, 3rd
+
+]
+
+---
+
+# Dây chuyền lây
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DCL3.png"))
+```
+
+.footnote[
+
+CDC (2012) Principles of Epidemiology in Public Health Practice, 3rd
+
+]
+
+---
+
+# Dây chuyền lây
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "DCL5.png"))
+```
+
+.footnote[
+
+CDC (2012) Principles of Epidemiology in Public Health Practice, 3rd
+
+]
+
+---
+
+# Miễn dịch đặc hiệu và không đặc hiệu
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "Immunity.png"))
+```
+
+.footnote[
+
+Dranoff, G. (2004) Nat Rev Cancer 4, 11–22 (2004)
+
+]
+
+---
+
+# Biện pháp kiểm soát
+
+--
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "control1.png"))
+```
+
+.footnote[
+
+CDC (2012) Principles of Epidemiology in Public Health Practice, 3rd
+
+]
+
+---
+
+# Biện pháp kiểm soát
+
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "control2.png"))
+```
+
+.footnote[
+
+CDC (2012) Principles of Epidemiology in Public Health Practice, 3rd
+
+]
+
+---
+
+# Biện pháp kiểm soát
+
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "control3.png"))
+```
+
+.footnote[
+
+CDC (2012) Principles of Epidemiology in Public Health Practice, 3rd
+
+]
+
+---
+
+# Miễn dịch quần thể (Herd immunity)
+
+* 1918: “contagious abortion” ở gia súc, George Potter
+
+> Abortion disease may be likened to a fire, which, if new fuel is not constantly added, soon dies down. Herd
+immunity is developed, therefore, by retaining the immune cows, raising the calves, and avoiding the introduction of foreign cattle.
+
+.footnote[
+
+Jones, D., & Helmreich, S. (2020). A history of herd immunity. The Lancet, 396(10254), 810–811. https://doi.org/10.1016/S0140-6736(20)31924-3
+
+]
+
+---
+
+# Miễn dịch quần thể (Herd immunity)
+
+* 1924: Sheldon Dudley: " The human herd: Greenwich Hospital Schoolboys at dinner"
+
+```{r, echo=FALSE, out.width=600, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "humanherd.jpg"))
+```
+
+.footnote[
+
+Jones, D., & Helmreich, S. (2020). A history of herd immunity. The Lancet, 396(10254), 810–811. https://doi.org/10.1016/S0140-6736(20)31924-3
+
+]
+
+---
+
+# Miễn dịch quần thể (Herd immunity)
+
+* 1950s, 1960s: vaccine: "cần chủng ngừa cho bao nhiêu người để kiểm soát/loại trừ bệnh?" 
+
+.footnote[
+
+Jones, D., & Helmreich, S. (2020). A history of herd immunity. The Lancet, 396(10254), 810–811. https://doi.org/10.1016/S0140-6736(20)31924-3
+
+]
+
+---
+
+# Miễn dịch quần thể (Herd immunity)
+
+COVID-19
+
+* Anh: "We are going to have to generate what we call herd immunity"
+* Thụy Điển
+
+---
+
+# Miễn dịch quần thể (Herd immunity)
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "herdimmunity.png"))
+```
+
+.footnote[
+
+https://medicalxpress.com/news/2020-08-herd-immunity-dangerous-strategy-covid-.html
+
+]
+
+---
+
+# Miễn dịch quần thể (Herd immunity)
+
+```{r, echo = FALSE}
+knitr::include_url("https://fivethirtyeight.com/features/without-a-vaccine-herd-immunity-wont-save-us/")
+```
+
+.footnote[
+
+https://fivethirtyeight.com/features/without-a-vaccine-herd-immunity-wont-save-us/
+
+]
+
+---
+
+# Miễn dịch quần thể (Herd immunity)
+
+COVID-19: 
+
+**Miễn dịch quần thể bằng lây nhiễm tự nhiên KHÔNG giúp chúng ta kiểm soát dịch !!!**
+
+* $R_0$ ~ 2-3. Nhiều người vẫn sẽ mắc bệnh dù 60-70% đã khỏi bệnh.
+* Tỉ lệ tử vong ~ 0.5-1.1%. Nhiều người sẽ tử vong.
+* Thời gian miễn dịch tồn tại: chưa hiểu rõ. 
+
+.footnote[
+
+https://dearpandemic.org/will-herd-immunity-work/
+
+]
+
+---
+
+# Mức độ hiện diện của bệnh
+
+* Ca bệnh lẻ tẻ (sporadic)
+
+* Lưu hành (endemic)
+
+* Lưu hành cao (hyperendemic)
+
+* Dịch (epidemic)
+
+* Đại dịch (pandemic)
+
+---
+
+# Ca bệnh lẻ tẻ (sporadic)
+
+```{r, echo=FALSE, out.width=500, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "sporadic1.png"))
+```
+
+.footnote[
+
+Marchand, E. et al. (2013). Autochthonous case of dengue in France, October 2013. Eurosurveillance, 18(50), 20661. https://doi.org/10.2807/1560-7917.ES2013.18.50.20661
+
+]
+
+---
+
+# Ca bệnh lẻ tẻ (sporadic)
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "sporadic2.png"))
+```
+
+.footnote[
+
+Marchand, E. et al. (2013). Autochthonous case of dengue in France, October 2013. Eurosurveillance, 18(50), 20661. https://doi.org/10.2807/1560-7917.ES2013.18.50.20661
+
+]
+
+---
+
+# Lưu hành (endemic)
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "endemic.png"))
+```
+
+.footnote[
+
+https://www.healthmap.org/dengue/en/
+
+]
+
+---
+
+# Lưu hành (endemic) vs. Dịch (epidemic)
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "epidemic.png"))
+```
+
+---
+
+# Đại dịch (pandemic)
+
+COVID-19 (10 Nov 2020)
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "pandemic.png"))
+```
+
+.footnote[
+
+https://covid19.who.int/
+
+]
+
+---
+
+# Đại dịch (pandemic)
+
+```{r, echo=FALSE, out.width=400, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "Pandemic2.png"))
+```
+
+.footnote[
+
+https://www.visualcapitalist.com/history-of-pandemics-deadliest/
+
+]
+
+---
+
+# Dịch xuất hiện khi
+
+* Gia tăng tức thời về số lượng hoặc độc lực của tác nhân
+
+* Tác nhân vừa được đưa vào một vùng mà từ trước giờ nó không có
+
+* Cách thức lây mạnh hơn, do đó, nhiều túc chủ cảm thụ bị tiếp xúc hơn
+
+* Một vài thay đổi về tính cảm thụ trong đáp ứng của túc chủ với tác nhân
+
+* Những yếu tố làm tăng sự tiếp xúc của túc chủ, hoặc gây sự xâm nhập qua những ngõ vào mới
+
+---
+
+# Đường cong dịch
+
+```{r, echo=FALSE, out.width=900, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "duongcongdich.png"))
+```
+
+.footnote[
+
+Wu Z., McGoogan JM (2020) JAMA. 2020;323(13):1239-1242.
+
+]
+
+---
+
+# Điều tra dịch
+
+* Có dịch không?
+* Dân số nguy cơ?
+* Cách lây truyền?
+* Nguyên nhân?
+* Tỷ suất tấn công?
+* Phổ lâm sàng của bệnh?
+* Thời gian ủ bệnh?
+* Cách kiểm soát hoặc dập dịch?
+* Hiệu quả của cách can thiệp?
+
+.footnote[
+Kuller RH (1987) Yale J Biol Med; 60(4): 363–377
+]
+---
+class: inverse, center, middle
+
+# Tóm tắt
+
+---
+
+# Tóm tắt
+
+Sự xuất hiện bệnh – Định nghĩa ca bệnh
+
+Lịch sử tự nhiên của bệnh
+
+* Bậc dự phòng
+* Hiện tượng tảng băng
+
+Sự lây truyền bệnh
+
+* Dây chuyền lây
+* Các biện pháp kiểm soát lây truyền bệnh
+
+Sự xuất hiện dịch
+
+* Các mức độ hiện diện của bệnh
+* Các mô hình dịch (đường cong dịch)
+* Điều tra dịch
+
+---
+class: center, middle
+
+# Cám ơn các anh chị đã theo dõi !
+
+Nhận xét về buổi học
+
+```{r, echo=FALSE, out.width=400, fig.align="center"}
+knitr::include_graphics(path = file.path("figures", "evaluation.png"))
+```
+
+
+

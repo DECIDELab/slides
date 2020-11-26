@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Dịch tễ học Bệnh không lây</title>
+    <title>Nghiên cứu khoa học</title>
     <meta charset="utf-8" />
     <meta name="author" content="Phùng Khánh Lâm, BS, TS" />
-    <meta name="date" content="2020-11-18" />
+    <meta name="date" content="2020-11-21" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="lampk.css" type="text/css" />
   </head>
@@ -12,11 +12,11 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Dịch tễ học Bệnh không lây
-## SỨC KHOẺ TINH THẦN
+# Nghiên cứu khoa học
+## BÁC SĨ VÀ NGHIÊN CỨU KHOA HỌC
 ### Phùng Khánh Lâm, BS, TS
 ### </br> Bộ môn Dịch tễ học, Khoa Y tế công cộng, Đại học Y Dược TP Hồ Chí Minh
-### </br> 2020-11-18
+### </br> 2020-11-21
 
 ---
 
@@ -25,71 +25,52 @@ class: center, middle, inverse, title-slide
 
 
 
----
-
-class: inverse, center, middle
-
-# NO HEALTH WITHOUT MENTAL HEALTH
-
----
-
-# Meh
-
-&lt;video width="640" height="480" autoplay&gt;
-&lt;source src="https://www.dropbox.com/s/fdvexas49e06y6d/Meh.mp4?dl=0" type="video/mp4"&gt;
-&lt;/video&gt;
-
----
-
-# Trầm cảm là gì?
-
-&lt;iframe src="https://youtube.com/embed/z-IR48Mb3W0" width="100%" height="400px"&gt;&lt;/iframe&gt;
+background-image: url("figures/tomorrowdoctor_20032.png")
+background-position: center
+background-size: cover
 
 .footnote[
-https://youtu.be/z-IR48Mb3W0
-]
----
-
-# "Overdue" by Wali Shah
-
-&lt;iframe src="https://youtube.com/embed/y4qgMzsGyfg" width="100%" height="400px"&gt;&lt;/iframe&gt;
-
-.footnote[
-https://globalmentalhealthcommission.org/animations/
+UK General Medical Council (2003) Tomorrow’s doctors.
 ]
 
 ---
-class: inverse, center, middle
 
-# DISCRIMINATION
+# Người bác sĩ tương lai
 
-# STIGMA
+&gt; Medical students are .ered[tomorrow’s doctors]. In
+accordance with Good medical practice, newly
+qualified doctors must make the care of patients their
+first concern, applying their knowledge and skills in a
+competent, ethical and professional manner and taking
+responsibility for their own actions in complex and
+uncertain situations.
+
+.footnote[
+UK General Medical Council (2018) Outcomes for graduates.
+]
+
+---
+background-image: url("figures/outcomesgraduates_2018.png")
+background-position: center top
+background-size: 100% 90%
+
+.footnote[
+UK General Medical Council (2018) Outcomes for graduates.
+]
 
 ---
 
-# Đối tượng nguy cơ
-
-* Trẻ mồ côi
-* Trẻ vị thành niên
-* Phụ nữ sau sinh
-* Người mắc bệnh mạn tính (đặc biệt HIV/AIDS)
-* Người già
-* Thảm hoạ, chiến tranh
+![:img 50%, -100px, 30px, H1. Xin chào](figures/outcomesgraduates_2018.png)
+![:img 50%, 200px, 0px, H2. Xin chào](figures/tomorrowdoctor_20032.png)
 
 ---
 
-class: inverse, center, middle
-
-# ĐO LƯỜNG
-
----
-
-class: inverse, center, middle
-
-# CAN THIỆP
+![:imgabs 50%, 10%, 30%](figures/outcomesgraduates_2018.png)
+![:imgabs 50%, 50%, 50%](figures/tomorrowdoctor_20032.png)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="addons/macro.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
 "highlightLines": true,
@@ -161,6 +142,51 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
   }
 })();
+(function(time) {
+  var d2 = function(number) {
+    return ('0' + number).slice(-2); // left-pad 0 to minutes/seconds
+  },
+
+  time_format = function(total) {
+    var secs = Math.abs(total) / 1000;
+    var h = Math.floor(secs / 3600);
+    var m = Math.floor(secs % 3600 / 60);
+    var s = Math.round(secs % 60);
+    var res = d2(m) + ':' + d2(s);
+    if (h > 0) res = h + ':' + res;
+    return res;  // [hh:]mm:ss
+  },
+
+  slide_number_div = function(i) {
+    return document.getElementsByClassName('remark-slide-number').item(i);
+  },
+
+  current_page_number = function(i) {
+    return slide_number_div(i).firstChild.textContent;  // text "i / N"
+  };
+
+  var timer = document.createElement('span'); timer.id = 'slide-time-left';
+  var time_left = time, k = slideshow.getCurrentSlideIndex(),
+      last_page_number = current_page_number(k);
+
+  setInterval(function() {
+    time_left = time_left - 1000;
+    timer.innerHTML = ' ' + time_format(time_left);
+    if (time_left < 0) timer.style.color = 'red';
+  }, 1000);
+
+  slide_number_div(k).appendChild(timer);
+
+  slideshow.on('showSlide', function(slide) {
+    var i = slide.getSlideIndex(), n = current_page_number(i);
+    // reset timer when a new slide is shown and the page number is changed
+    if (last_page_number !== n) {
+      time_left = time; last_page_number = n;
+      timer.innerHTML = ' ' + time_format(time); timer.style.color = null;
+    }
+    slide_number_div(i).appendChild(timer);
+  });
+})(60000);
 // adds .remark-code-has-line-highlighted class to <pre> parent elements
 // of code chunks containing highlighted lines with class .remark-code-line-highlighted
 (function(d) {
